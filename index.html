@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist with supabase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <h2>My Todo List</h2>
+  <div class="input-field">
+    <input id="inpitems" type="text" placeholder="Enter your task">
+    <button id="addtask">Add Task</button>
+  </div>
+  <button id="clearall" style="display: none;">Clear All</button>
+  <button id="updatetask" style="display:none;">Update Task</button>
+  <ul id="show"></ul>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    .wrapper {
+      background: #fff;
+      max-width: 400px;
+      width: 100%;
+      padding: 25px;
+      border-radius: 5px;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+    .wrapper h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .input-field {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .input-field input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+    .input-field input:focus {
+      border-color: #497BE8;
+      outline: none;
+    }
+    .input-field button {
+      padding: 0 15px;
+      background: #497BE8;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    .input-field button:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+    #clearall,#updatetask {
+      background: #dc3545;
+      margin-top: -5px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    #clearall,#updatetask:hover {
+      background: #c82333;
+    }
+    ul {
+      list-style: none;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    ul li {
+      background: #f2f2f2;
+      margin-bottom: 8px;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: fadeIn 0.3s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    ul li button {
+      background: #dc3545;
+      border: none;
+      color: #fff;
+      border-radius: 3px;
+      padding: 5px 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    ul li button:hover {
+      background: #c82333;
+    }
+    ul li .edit-btn {
+      background: #007bff;
+      margin-right: 5px;
+    }
+    ul li .edit-btn:hover {
+      background: #0056b3;
+    }
