@@ -9,7 +9,7 @@
       min-height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       padding: 20px;
     }
     .wrapper {
@@ -102,4 +102,5 @@
     }
     ul li .edit-btn:hover {
       background: #0056b3;
+
     }
