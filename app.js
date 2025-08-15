@@ -62,7 +62,7 @@ let input = document.getElementById("inpitems");
         let value = input.value.trim();
         if (!value || editId === null){
             alert('Update failed')
-        return
+        return;
         }
 
         const { error } = await client
@@ -104,4 +104,5 @@ let input = document.getElementById("inpitems");
 
     // Load tasks on page load
     fetchTasks();
+
 
